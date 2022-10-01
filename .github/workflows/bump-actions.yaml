@@ -6,13 +6,17 @@ on:
 
 jobs:
   bump:
+    permissions:
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2.4.2
       - name: GitHub Actions Version Updater
-        uses: saadmk11/github-actions-version-updater@v0.5.6
+        uses: saadmk11/github-actions-version-updater@main
         with:
           commit_message: "ci(action): bump GitHub Actions"
           pull_request_title: "ci(action): bump GitHub Actions"
+          ignore:
+            - saadmk11/github-actions-version-updater@main
           token: ${{ github.token }}
