@@ -17,6 +17,5 @@ jobs:
         with:
           commit_message: "ci(action): bump GitHub Actions"
           pull_request_title: "ci(action): bump GitHub Actions"
-          ignore:
-            - saadmk11/github-actions-version-updater@main
+          ignore: '["saadmk11/github-actions-version-updater@main"]'
           token: ${{ github.token }}
