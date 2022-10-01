@@ -1,0 +1,7 @@
+colorama~=0.4.5
+GitPython~=3.1.27
+prettytable~=3.4.1
+python_frontmatter~=1.0.0
+questionary~=1.10.0
+requests~=2.28.1
+tqdm~=4.64.1
