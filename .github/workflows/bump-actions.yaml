@@ -6,7 +6,6 @@ on:
 
 jobs:
   bump:
-    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,4 +16,4 @@ jobs:
           commit_message: "ci(action): bump GitHub Actions"
           pull_request_title: "ci(action): bump GitHub Actions"
           ignore: '["saadmk11/github-actions-version-updater@main"]'
-          token: ${{ github.token }}
+          token: ${{ secrets.GH_TOKEN }}
