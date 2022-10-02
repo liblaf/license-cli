@@ -13,6 +13,8 @@ jobs:
       - name: GitHub Actions Version Updater
         uses: saadmk11/github-actions-version-updater@main
         with:
+          committer_username: Qin Li
+          committer_email: liblaf@outlook.com
           commit_message: "ci(action): bump GitHub Actions"
           pull_request_title: "ci(action): bump GitHub Actions"
           ignore: '["saadmk11/github-actions-version-updater@main"]'
