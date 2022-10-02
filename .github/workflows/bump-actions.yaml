@@ -6,10 +6,7 @@ on:
 
 jobs:
   bump:
-    permissions:
-      contents: write
-      deployments: write
-      pull-requests: write
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
