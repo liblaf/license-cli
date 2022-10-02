@@ -27,10 +27,7 @@ jobs:
           pip install pyinstaller
       - name: Build
         run: |
-          pyinstaller --onefile \
-            --name license-cli-${{ matrix.os }} \
-            --paths license_cli \
-            license_cli/__main__.py
+          pyinstaller --onefile --name license-cli-${{ matrix.os }} --paths license_cli license_cli/__main__.py
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
